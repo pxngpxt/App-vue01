@@ -29,16 +29,22 @@
         <li class="nav-item">
           <a class="nav-link" href="/employee">Employee</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/show_product">ShowProduct</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sh_product">Sh_Product</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
           </a>
+
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="/product">Product</a></li>
           </ul>
+      
+
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
