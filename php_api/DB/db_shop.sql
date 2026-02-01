@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 25, 2026 at 12:35 PM
+-- Generation Time: Feb 01, 2026 at 11:31 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -45,8 +45,7 @@ INSERT INTO `customers` (`customer_id`, `firstName`, `lastName`, `phone`, `usern
 (00000002, 'วิภา', 'สุขสันต์', '0898765432', 'wipa', 'wipa2025'),
 (00000003, 'John', 'Doe', '0991122334', 'johnd', 'securepwd'),
 (00000004, 'pongpat', 'Winter', '0644012944', 'SXN', '$2y$10$AbHZf.y1WJulH'),
-(00000005, 'pp', 'ss', '0644012945', 'sXn', '$2y$10$dmOub2aWA90B.Zx/WY.JQempXEro5bDyabC2F7FkGa4h9qWwTSJZu'),
-(00000006, 'pongpat kunharat', 'sale', '30000', '1', '$2y$10$NRFSQ.FxtODIv8drOVtpAuKwRbR8Xsf5sIUc7SCoTAJEnGWLjHKNG');
+(00000005, 'pp', 'ss', '0644012945', 'sXnn', '$2y$10$syREWVkx5mq1GdC3Zu6IcOjs1krhF0NjgzdnBv5C/Bjd2Z1.vsUoi');
 
 -- --------------------------------------------------------
 
@@ -72,7 +71,9 @@ INSERT INTO `employees` (`emp_id`, `full_name`, `department`, `salary`, `active`
 (0000000002, 'สมหญิง ดีงาม', 'บัญชี', '28000.00', 1, '2026-01-18 10:28:08'),
 (0000000003, 'อนันต์ สุขใจ', 'การตลาด', '25000.00', 0, '2026-01-18 10:28:08'),
 (0000000004, 'สุดา พรมดี', 'ทรัพยากรบุคคล', '32000.00', 1, '2026-01-18 10:28:08'),
-(0000000005, 'asda', 'asda', '12341.00', 1, '2026-01-25 10:00:43');
+(0000000006, 'SXN', 'IT', '150000.00', 1, '2026-02-01 08:48:59'),
+(0000000007, 'Pongpat kunharat', 'CEO', '200000.00', 1, '2026-02-01 09:02:13'),
+(0000000008, 'sasd', 'asda', '56584.00', 1, '2026-02-01 09:32:26');
 
 -- --------------------------------------------------------
 
@@ -160,7 +161,7 @@ ALTER TABLE `customers`
 -- AUTO_INCREMENT for table `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `emp_id` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `emp_id` int(10) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `products`
@@ -172,7 +173,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `type`
 --
 ALTER TABLE `type`
-  MODIFY `type_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'รหัสสินค้า', AUTO_INCREMENT=3;
+  MODIFY `type_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'รหัสสินค้า', AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
