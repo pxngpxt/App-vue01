@@ -10,7 +10,7 @@ const routes = [
   {
     path: '/Customer',
     name: 'Customer',
-    component: () => import( '../views/Customer.vue')
+    component: () => import( '../views/Customer_crud.vue')
   },
   {
     path: '/Contact',
@@ -20,13 +20,13 @@ const routes = [
   {
     path: '/type',
     name: 'type',
-    component: () => import( '../views/type.vue')
+    component: () => import( '../views/type_crud.vue')
   }
   ,
   {
     path: '/employee',
     name: 'employee',
-    component: () => import( '../views/employee.vue')
+    component: () => import( '../views/employee_crud.vue')
   },
   {
     path: '/add_customer',
