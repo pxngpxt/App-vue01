@@ -53,6 +53,11 @@ const routes = [
     path: '/sh_product',
     name: 'sh_product',
     component: () => import( '../views/sh_product.vue')
+  },
+  {
+    path: '/student',
+    name: 'student',
+    component: () => import( '../views/student.vue')
   }
 
 ]
