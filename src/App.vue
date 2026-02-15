@@ -30,6 +30,9 @@
           <a class="nav-link" href="/employee">Employee</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="/employee_crud">Employee_CRUD</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="/show_product">ShowProduct</a>
         </li>
         <li class="nav-item">
@@ -37,6 +40,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/student">Student</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/product_crud">product_crud</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
