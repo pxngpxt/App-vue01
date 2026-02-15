@@ -27,7 +27,7 @@
             <td>{{ Number(employee.salary).toLocaleString() }} บาท</td>
             <td>
               <span :class="employee.active == 1 ? 'badge bg-success' : 'badge bg-secondary'">
-                {{ employee.active == 1 ? 'ใช้งาน' : 'ไม่ใช้งาน' }}
+                {{ employee.active == 1 ? 'ทำงาน' : 'ลาออก' }}
               </span>
             </td>
             <td>{{ formatDate(employee.created_at) }}</td>
@@ -72,7 +72,12 @@
                 </div>
                 <div class="mb-3">
                   <label class="form-label">แผนก</label>
-                  <input v-model="editForm.department" type="text" class="form-control" required />
+                  <select v-model="editForm.department" class="form-select" required>
+                    <option value="">-- เลือกแผนก --</option>
+                    <option value="IT">IT</option>
+                    <option value="บัญชี">บัญชี</option>
+                    <option value="การตลาด">การตลาด</option>
+                  </select>
                 </div>
                 <div class="mb-3">
                   <label class="form-label">เงินเดือน (บาท)</label>
@@ -81,8 +86,8 @@
                 <div class="mb-3">
                   <label class="form-label">สถานะ</label>
                   <select v-model="editForm.active" class="form-select" required>
-                    <option value="1">ใช้งาน</option>
-                    <option value="0">ไม่ใช้งาน</option>
+                    <option value="1">ปกติ</option>
+                    <option value="0">ลาออก</option>
                   </select>
                 </div>
                 <div class="mb-3">
